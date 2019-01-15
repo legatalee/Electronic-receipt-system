@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity">
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:background="#444">
+		
+		<TextView
+			android:id="@+id/TV_bluetoothStatus"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="#fff"/>
+	
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:background="#444">
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:orientation="horizontal">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="자기장 센서 : "
+				android:textColor="#fff"/>
+			
+			<TextView
+				android:id="@+id/TV_magneticStatus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#fff"/>
+		</LinearLayout>
+	
+	</RelativeLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:weightSum="1">
+		
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+			
+			<LinearLayout
+				android:id="@+id/LL_log"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				
+				<TextView
+					android:id="@+id/TV_log"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+			
+			</LinearLayout>
+		
+		</ScrollView>
+		
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:weightSum="4">
+			
+			<Button
+				android:id="@+id/BTN_fine"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="fine"/>
+			
+			<Button
+				android:id="@+id/BTN_print"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="print"/>
+			
+			<Button
+				android:id="@+id/BTN_error"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="error"/>
+			
+			<Button
+				android:id="@+id/BTN_buzz"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="buzz"/>
+		
+		</LinearLayout>
+	
+	</LinearLayout>
+
+</LinearLayout>

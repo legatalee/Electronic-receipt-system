@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:iosched="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".GalleryActivity">
+	
+	<item
+		android:id="@+id/menu_bluetooth"
+		android:icon="@drawable/baseline_bluetooth_white_24"
+		android:title="블루투스"
+		iosched:showAsAction="ifRoom|withText"
+		tools:ignore="AppCompatResource"/>
+
+</menu>
